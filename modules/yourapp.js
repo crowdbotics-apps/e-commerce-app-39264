@@ -4,7 +4,7 @@ import SignIn from "../screens/signin1";
 const YourApp = () => {
   return <View style={styles.container}>
       {/* <Text style={styles.text}>Welcome to your brand new app!</Text> */}
-      <SignIn />
+      {/* <SignIn /> */}
     </View>;
 };
 
