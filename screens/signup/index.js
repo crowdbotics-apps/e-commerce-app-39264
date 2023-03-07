@@ -142,7 +142,7 @@ export default Signup;
 const Button = props => {
   return <TouchableHighlight onPress={props.onPress} underlayColor='#DDDDDD'>
       <View style={[btnStyles.button, {
-      backgroundColor: props.backgroundColor ? props.backgroundColor : "#000000",
+      backgroundColor: "#3669c9",
       height: props.height ? props.height : 49,
       borderWidth: props.borderWidth ? props.borderWidth : 0,
       borderColor: props.borderColor ? props.borderColor : "#000000"
@@ -176,7 +176,7 @@ const Input = props => {
 
 const textStyles = StyleSheet.create({
   input: {
-    backgroundColor: "#fff",
+    backgroundColor: "#f1f1f1",
     height: 53,
     borderColor: "#C4C4C4",
     color: "#000",

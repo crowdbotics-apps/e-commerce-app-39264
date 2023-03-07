@@ -88,6 +88,10 @@ const styles = StyleSheet.create({
   backText: {
     fontWeight: "600",
     fontSize: 20
+  },
+  GcyKcfNj: {
+    color: "#fafafa",
+    textAlign: "center"
   }
 });
 export default ForgotPassword;
@@ -95,14 +99,13 @@ export default ForgotPassword;
 const Button = props => {
   return <TouchableHighlight onPress={props.onPress} underlayColor="#DDDDDD">
       <View style={[btnStyles.button, {
-      backgroundColor: props.backgroundColor ? props.backgroundColor : "#000000",
+      backgroundColor: "#3669C9",
       height: props.height ? props.height : 49,
       borderWidth: props.borderWidth ? props.borderWidth : 0,
-      borderColor: props.borderColor ? props.borderColor : "#000000"
+      borderColor: props.borderColor ? props.borderColor : "#000000",
+      opacity: 1
     }]}>
-        <Text style={[btnStyles.text, {
-        color: props.color ? props.color : "#ffffff"
-      }]}>
+        <Text style={[btnStyles.text, styles.GcyKcfNj]}>
           {props.children}
         </Text>
       </View>
@@ -131,7 +134,7 @@ const Input = props => {
 
 const inputStyles = StyleSheet.create({
   input: {
-    backgroundColor: "#fff",
+    backgroundColor: "#f1f1f1",
     height: 53,
     borderColor: "#C4C4C4",
     color: "#000",

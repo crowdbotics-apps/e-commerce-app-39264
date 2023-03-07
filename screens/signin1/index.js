@@ -80,6 +80,9 @@ const styles = StyleSheet.create({
   DyDrzUmc: {
     width: 107,
     height: 62
+  },
+  lworacUg: {
+    color: "#fafafa"
   }
 });
 export default SignIn;
@@ -87,14 +90,12 @@ export default SignIn;
 const Button = props => {
   return <TouchableHighlight onPress={props.onPress} underlayColor="#DDDDDD">
       <View style={[btnStyles.button, {
-      backgroundColor: props.backgroundColor ? props.backgroundColor : "#000000",
+      backgroundColor: "#3669c9",
       height: props.height ? props.height : 49,
       borderWidth: props.borderWidth ? props.borderWidth : 0,
       borderColor: props.borderColor ? props.borderColor : "#000000"
     }]}>
-        <Text style={[btnStyles.text, {
-        color: props.color ? props.color : "#ffffff"
-      }]}>
+        <Text style={[btnStyles.text, styles.lworacUg]}>
           {props.children}
         </Text>
       </View>
