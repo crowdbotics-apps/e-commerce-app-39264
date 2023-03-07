@@ -246,9 +246,7 @@ const TabView = ({
   };
   const propStyle = style || {};
   return <View style={[tabViewStyles.paletteContainer, backgroundColorStyle, propStyle]}>
-      {tabTitles.map((title, index) => <Pressable onPress={() => onPress(index)} style={index === selected ? [tabViewStyles.selected, tabColorStyle] : [tabViewStyles.unSelected, backgroundColorStyle]} key={index}>
-          <Text>{title}</Text>
-        </Pressable>)}
+      {tabTitles.map((title, index) => {})}
     </View>;
 };
 
