@@ -1,9 +1,10 @@
 import React from "react";
 import { StyleSheet, View, Text } from "react-native";
-
+import SignIn from "../screens/signin1";
 const YourApp = () => {
   return <View style={styles.container}>
-      <Text style={styles.text}>Welcome to your brand new app!</Text>
+      {/* <Text style={styles.text}>Welcome to your brand new app!</Text> */}
+      <SignIn />
     </View>;
 };
 
