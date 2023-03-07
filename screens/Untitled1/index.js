@@ -1,3 +1,4 @@
+import { ImageBackground } from "react-native";
 import React from "react";
 import { StyleSheet, ScrollView, SafeAreaView } from "react-native";
 
@@ -8,7 +9,7 @@ const Untitled1 = () => {
       padding: 10,
       position: 'relative',
       flex: 1
-    }} style={styles.QaZTpKxX}></ScrollView>
+    }} style={styles.QaZTpKxX}><ImageBackground style={styles.znvAOVBd} source={require("./vector.png")} resizeMode="cover"></ImageBackground><ImageBackground style={styles.GMrVxcZl} source={require("./vector.png")} resizeMode="cover"></ImageBackground></ScrollView>
     </SafeAreaView>;
 };
 
@@ -67,6 +68,17 @@ const styles = StyleSheet.create({
   FfiOnKTk: {
     width: 36,
     height: 31
+  },
+  znvAOVBd: {
+    width: 43,
+    height: 48,
+    position: "absolute",
+    top: 268,
+    left: 155
+  },
+  GMrVxcZl: {
+    width: 107,
+    height: 62
   }
 });
 export default Untitled1;
