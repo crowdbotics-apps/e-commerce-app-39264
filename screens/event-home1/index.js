@@ -356,10 +356,10 @@ const UpcomingEvent = ({
   event
 }) => {
   return <View style={upcomingEventStyles.container}>
-      <Image source={event.image} style={upcomingEventStyles.image} />
+      <Image source={require("./Group 355.png")} style={upcomingEventStyles.image} />
       <View style={upcomingEventStyles.content}>
-        <Text style={upcomingEventStyles.title}>{event.title}</Text>
-        <Text style={upcomingEventStyles.location}>{event.location}</Text>
+        <Text style={upcomingEventStyles.title}>Independence Day</Text>
+        <Text style={upcomingEventStyles.location}>Basement Shop #15</Text>
         <View style={upcomingEventStyles.details}>
           <Image source={require("./assets/usersJoined.png")} style={upcomingEventStyles.icon} />
           <Text style={upcomingEventStyles.detailsText}>
