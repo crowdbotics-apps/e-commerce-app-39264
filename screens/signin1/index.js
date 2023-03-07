@@ -1,3 +1,4 @@
+import { ImageBackground } from "react-native";
 import React from "react";
 import { View, Text, TouchableHighlight, StyleSheet } from "react-native";
 
@@ -13,10 +14,7 @@ const SignIn = () => {
       <View>
         <View style={styles.textBox}>
           <Text style={styles.welcomeText}>Welcome Back</Text>
-          <Text style={styles.text}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor
-          </Text>
+          <Text style={styles.text}> </Text>
         </View>
         <View style={styles.footerContainer}>
           <View style={styles.mb35}>
@@ -29,7 +27,7 @@ const SignIn = () => {
           </Button>
         </View>
       </View>
-    </View>;
+    <ImageBackground style={styles.vTKfFnfS} source={require("./shopping-cart-3d-render-icon.jpg")} resizeMode="cover"></ImageBackground></View>;
 };
 
 const styles = StyleSheet.create({
@@ -83,6 +81,13 @@ const styles = StyleSheet.create({
   },
   lworacUg: {
     color: "#fafafa"
+  },
+  vTKfFnfS: {
+    width: 178,
+    height: 117,
+    position: "absolute",
+    top: 130,
+    left: 89.5
   }
 });
 export default SignIn;
