@@ -57,7 +57,9 @@ const Login2 = ({
       <View style={styles.footerContainer}>
         <Text style={styles.footerText}>Do not have an account?</Text>
         <TouchableOpacity>
-          <Text>Sign Up</Text>
+          <Pressable onPress={{}}><Pressable onPress={() => {
+            navigation.navigate("signup");
+          }}><Text>Sign Up</Text></Pressable></Pressable>
         </TouchableOpacity>
       </View>
     </View>;

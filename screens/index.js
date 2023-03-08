@@ -7,12 +7,10 @@ export const screens = mods.map(mod => {
     }
   });
 });
-
-console.log("screen name>>>>>>>>>>>>>",screens);
-
+console.log("screen name>>>>>>>>>>>>>", screens);
 export function getNavigationScreen(name) {
   const screen = screens.find(screen => screen.name == name);
- 
+
   if (screen) {
     return screen.name;
   }
