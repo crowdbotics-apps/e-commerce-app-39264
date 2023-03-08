@@ -105,9 +105,11 @@ const Button = props => {
                 borderWidth: props.borderWidth ? props.borderWidth : 0,
                 borderColor: props.borderColor ? props.borderColor : "#000000"
               }]}>
-        <Text style={[btnStyles.text, styles.lworacUg]}>
+        <Pressable onPress={{}}><Pressable onPress={() => {
+                    props.navigation.navigate("login2");
+                  }}><Text style={[btnStyles.text, styles.lworacUg]}>
           {props.children}
-        </Text>
+        </Text></Pressable></Pressable>
       </View></Pressable></Pressable></Pressable></Pressable></Pressable>
     </TouchableHighlight>;
 };
