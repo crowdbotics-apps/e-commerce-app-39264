@@ -22,7 +22,8 @@ const getNavigation = (modules, screens, initialRoute) => {
             <Navigator {...props} />
           </OptionsContext.Provider>;
       };
-      console.log("routes::::", routes)
+
+      console.log("routes::::", routes);
       return <Stack.Screen key={name} name={name} component={Component} />;
     });
     const screenOptions = {
@@ -34,7 +35,8 @@ const getNavigation = (modules, screens, initialRoute) => {
         </Stack.Navigator>
       </NavigationContainer>;
   };
-console.log("navigation", Navigation.routes)
+
+  console.log("navigation", Navigation.routes);
   return Navigation;
 };
 
@@ -55,9 +57,9 @@ const getStore = globalState => {
 
 const App = () => {
   const global = useContext(GlobalOptionsContext);
-  console.log("modules==>", modules)
+  console.log("modules==>", modules);
   const Navigation = getNavigation(modules, screens, initialRoute);
-  console.log("navigation 2", Navigation.routes)
+  console.log("navigation 2", Navigation.routes);
   const store = getStore(global);
   let effects = {};
   hooks.map(hook => {

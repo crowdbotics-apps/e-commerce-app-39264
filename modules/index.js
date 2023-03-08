@@ -8,7 +8,7 @@ export const reducers = slices.reduce((acc, slice) => {
   acc[name] = slice.reducer;
   return acc;
 }, {});
-console.log("===========>>>>>>>>>>>>>>>>>.", mods)
+console.log("===========>>>>>>>>>>>>>>>>>.", mods);
 export const navigators = modules.filter(mod => mod.value.navigator).map(mod => {
   return {
     name: mod.name,

@@ -182,8 +182,7 @@ const styles = StyleSheet.create({
   UIZtmtcx: {
     backgroundColor: "red"
   },
-  AnwmTouP: {
-    // backgroundColor: titleColor.undefined
+  AnwmTouP: {// backgroundColor: titleColor.undefined
   },
   IaykfJFx: {
     height: 100,
