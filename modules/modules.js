@@ -46,8 +46,10 @@ const addPlaceholderModule = modules => {
 };
 
 export const getModules = manifest => {
+  console.log("manifest .............", manifest)
   modules = manifest.map(addTitle).sort(sortNavigators).sort(sortMenu);
   addPlaceholderModule(modules);
+  console.log("manifest modules---------", modules)
   return modules;
 };
 export function getPropertyMap(source, prop) {
