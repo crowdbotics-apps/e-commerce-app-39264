@@ -17,7 +17,7 @@ const SignIn = ({
       <View>
         <View style={styles.textBox}>
           <Text style={styles.welcomeText}>Welcome Back</Text>
-          <Text style={styles.text}> </Text>
+          <Text style={styles.text}> Buy Everything You Need</Text>
         </View>
         <View style={styles.footerContainer}>
           <View style={styles.mb35}>
@@ -47,7 +47,9 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: "#000000",
     textAlign: "center",
-    paddingHorizontal: "20%"
+    paddingHorizontal: "20%",
+    width: 304,
+    height: 23
   },
   welcomeText: {
     fontSize: 26,
@@ -86,11 +88,11 @@ const styles = StyleSheet.create({
     color: "#fafafa"
   },
   vTKfFnfS: {
-    width: 178,
-    height: 117,
+    width: 301,
+    height: 218,
     position: "absolute",
-    top: 130,
-    left: 89.5
+    top: 79,
+    left: 28
   }
 });
 export default SignIn;
