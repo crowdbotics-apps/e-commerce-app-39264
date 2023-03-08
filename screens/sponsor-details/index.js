@@ -85,7 +85,9 @@ const styles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 20,
     color: "#737373",
-    textAlign: "justify"
+    textAlign: "justify",
+    width: 317,
+    height: 55
   },
   button: {
     marginTop: 60

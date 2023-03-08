@@ -180,7 +180,8 @@ const styles = StyleSheet.create({
     paddingLeft: 15
   },
   UIZtmtcx: {
-    backgroundColor: "red"
+    backgroundColor: "#ffffff",
+    borderWidth: 1
   },
   AnwmTouP: {// backgroundColor: titleColor.undefined
   },
