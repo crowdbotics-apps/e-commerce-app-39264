@@ -1,3 +1,4 @@
+import { Pressable } from "react-native";
 import React from "react";
 import { Text, View, TouchableOpacity, Image, StyleSheet, TextInput, TouchableHighlight } from "react-native";
 
@@ -5,7 +6,9 @@ const pressed = () => {
   console.log("pressed");
 };
 
-const Signup = () => {
+const Signup = ({
+  navigation
+}) => {
   return <View style={styles.container}>
       <View style={styles.heading}>
         <Text style={styles.headingText}>Sign up</Text>
@@ -25,7 +28,7 @@ const Signup = () => {
         </View>
 
         <View style={styles.loginContainer}>
-          <Button onPress={pressed}>Sign up</Button>
+          <Button onPress={pressed} navigation={navigation}>Sign up</Button>
         </View>
         <View style={styles.orContainer}>
           <View style={styles.line} />
@@ -147,9 +150,11 @@ const Button = props => {
       borderWidth: props.borderWidth ? props.borderWidth : 0,
       borderColor: props.borderColor ? props.borderColor : "#000000"
     }]}>
-        <Text style={[btnStyles.text, {
-        color: props.color ? props.color : "#ffffff"
-      }]}>{props.children}</Text>
+        <Pressable onPress={{}}><Pressable onPress={{}}><Pressable onPress={{}}><Pressable onPress={() => {
+              props.navigation.navigate("login2");
+            }}><Text style={[btnStyles.text, {
+                color: props.color ? props.color : "#ffffff"
+              }]}>{props.children}</Text></Pressable></Pressable></Pressable></Pressable>
       </View>
     </TouchableHighlight>;
 };

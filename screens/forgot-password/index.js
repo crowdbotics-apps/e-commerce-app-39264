@@ -1,3 +1,4 @@
+import { Pressable } from "react-native";
 import * as React from "react";
 import { Text, View, StyleSheet, TextInput, TouchableHighlight } from "react-native";
 
@@ -5,7 +6,9 @@ const pressed = () => {
   console.log("pressed");
 };
 
-const ForgotPassword = () => {
+const ForgotPassword = ({
+  navigation
+}) => {
   return <View style={styles.container}>
       <View style={styles.topHead}>
         <Text style={styles.mainHeading}>Forgot {"\n"} password</Text>
@@ -27,7 +30,7 @@ const ForgotPassword = () => {
         </View>
       </View>
       <View style={styles.resetButton}>
-        <Button onPress={pressed} style={styles.resetBtn}>
+        <Button onPress={pressed} style={styles.resetBtn} navigation={navigation}>
           Reset password
         </Button>
       </View>
@@ -98,17 +101,19 @@ export default ForgotPassword;
 
 const Button = props => {
   return <TouchableHighlight onPress={props.onPress} underlayColor="#DDDDDD">
-      <View style={[btnStyles.button, {
-      backgroundColor: "#3669C9",
-      height: props.height ? props.height : 49,
-      borderWidth: props.borderWidth ? props.borderWidth : 0,
-      borderColor: props.borderColor ? props.borderColor : "#000000",
-      opacity: 1
-    }]}>
+      <Pressable onPress={{}}><Pressable onPress={() => {
+        props.navigation.navigate("login2");
+      }}><View style={[btnStyles.button, {
+          backgroundColor: "#3669C9",
+          height: props.height ? props.height : 49,
+          borderWidth: props.borderWidth ? props.borderWidth : 0,
+          borderColor: props.borderColor ? props.borderColor : "#000000",
+          opacity: 1
+        }]}>
         <Text style={[btnStyles.text, styles.GcyKcfNj]}>
           {props.children}
         </Text>
-      </View>
+      </View></Pressable></Pressable>
     </TouchableHighlight>;
 };
 

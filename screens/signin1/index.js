@@ -1,3 +1,4 @@
+import { Pressable } from "react-native";
 import { ImageBackground } from "react-native";
 import React from "react";
 import { View, Text, TouchableHighlight, StyleSheet } from "react-native";
@@ -6,7 +7,9 @@ const pressed = () => {
   console.log("pressed");
 };
 
-const SignIn = () => {
+const SignIn = ({
+  navigation
+}) => {
   return <View style={styles.container}>
       <View style={styles.signinContainer}>
         <Text style={styles.signinText}>Sign in</Text>
@@ -18,11 +21,11 @@ const SignIn = () => {
         </View>
         <View style={styles.footerContainer}>
           <View style={styles.mb35}>
-            <Button onPress={pressed} height={50}>
+            <Button onPress={pressed} height={50} navigation={navigation}>
               Sign Up
             </Button>
           </View>
-          <Button onPress={pressed} height={50} borderWidth={1} backgroundColor="#FFF" color="#000">
+          <Button onPress={pressed} height={50} borderWidth={1} backgroundColor="#FFF" color="#000" navigation={navigation}>
             Log In
           </Button>
         </View>
@@ -94,16 +97,18 @@ export default SignIn;
 
 const Button = props => {
   return <TouchableHighlight onPress={props.onPress} underlayColor="#DDDDDD">
-      <View style={[btnStyles.button, {
-      backgroundColor: "#3669c9",
-      height: props.height ? props.height : 49,
-      borderWidth: props.borderWidth ? props.borderWidth : 0,
-      borderColor: props.borderColor ? props.borderColor : "#000000"
-    }]}>
+      <Pressable onPress={{}}><Pressable onPress={{}}><Pressable onPress={{}}><Pressable onPress={{}}><Pressable onPress={() => {
+              props.navigation.navigate("signup");
+            }}><View style={[btnStyles.button, {
+                backgroundColor: "#3669c9",
+                height: props.height ? props.height : 49,
+                borderWidth: props.borderWidth ? props.borderWidth : 0,
+                borderColor: props.borderColor ? props.borderColor : "#000000"
+              }]}>
         <Text style={[btnStyles.text, styles.lworacUg]}>
           {props.children}
         </Text>
-      </View>
+      </View></Pressable></Pressable></Pressable></Pressable></Pressable>
     </TouchableHighlight>;
 };
 
