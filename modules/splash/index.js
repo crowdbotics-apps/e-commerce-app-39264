@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { View, StyleSheet, Image } from "react-native";
-const NEXT_SCREEN_NAME = "TermsAndConditions";
+const NEXT_SCREEN_NAME = "signin1";
 
 const Splash = ({
   navigation

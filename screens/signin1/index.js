@@ -21,12 +21,12 @@ const SignIn = ({
         </View>
         <View style={styles.footerContainer}>
           <View style={styles.mb35}>
-            <Button onPress={pressed} height={50} navigation={navigation}>
-              Sign Up
-            </Button>
-          </View>
           <Button onPress={pressed} height={50} borderWidth={1} backgroundColor="#FFF" color="#000" navigation={navigation}>
             Log In
+          </Button>
+          </View>
+          <Button onPress={pressed} height={50} navigation={navigation}>
+            Sign Up
           </Button>
         </View>
       </View>
@@ -35,7 +35,7 @@ const SignIn = ({
 
 const styles = StyleSheet.create({
   mb35: {
-    marginBottom: 35
+    marginBottom: 15
   },
   footerContainer: {
     width: "80%",
