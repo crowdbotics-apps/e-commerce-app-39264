@@ -12,7 +12,6 @@
     "web:build": "./node_modules/.bin/webpack --config ./webpack.config.js --color --mode production"
   },
   "dependencies": {
-    "@modules/maps": "file:./modules/maps/",
     "@modules/splash": "file:./modules/splash/",
     "@modules/terms-and-conditions": "file:./modules/terms-and-conditions",
     "@react-native-community/masked-view": "^0.1.10",
