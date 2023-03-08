@@ -1,7 +1,10 @@
+import { Pressable } from "react-native";
 import React, { useState } from "react";
 import { Text, View, TouchableOpacity, Image, TouchableHighlight, TextInput, StyleSheet } from "react-native";
 
-const Login2 = () => {
+const Login2 = ({
+  navigation
+}) => {
   const [selected, setSelected] = useState(false);
 
   const onPress = () => {
@@ -26,11 +29,13 @@ const Login2 = () => {
             <CheckBox onPress={onPress} selected={selected} text="Remember me" />
           </View>
           <TouchableOpacity>
-            <Text>Forgot Password?</Text>
+            <Pressable onPress={{}}><Pressable onPress={() => {
+              navigation.navigate("forgotPassword");
+            }}><Text>Forgot Password?</Text></Pressable></Pressable>
           </TouchableOpacity>
         </View>
         <View style={styles.loginContainer}>
-          <Button>Log In</Button>
+          <Button navigation={navigation}>Log In</Button>
         </View>
         <View style={styles.orContainer}>
           <View style={styles.line} />
@@ -146,18 +151,22 @@ export default Login2;
 
 const Button = props => {
   return <TouchableHighlight onPress={props.onPress} underlayColor="#DDDDDD">
-      <View style={[btnStyles.button, {
-      backgroundColor: "#3669c9",
-      height: props.height ? props.height : 49,
-      borderWidth: props.borderWidth ? props.borderWidth : 0,
-      borderColor: props.borderColor ? props.borderColor : "#000000"
-    }]}>
-        <Text style={[btnStyles.text, {
-        color: props.color ? props.color : "#ffffff"
-      }]}>
+      <Pressable onPress={{}}><Pressable onPress={{}}><Pressable onPress={() => {
+          props.navigation.navigate("eventHome1");
+        }}><View style={[btnStyles.button, {
+            backgroundColor: "#3669c9",
+            height: props.height ? props.height : 49,
+            borderWidth: props.borderWidth ? props.borderWidth : 0,
+            borderColor: props.borderColor ? props.borderColor : "#000000"
+          }]}>
+        <Pressable onPress={{}}><Pressable onPress={() => {
+                props.navigation.navigate("eventHome1");
+              }}><Text style={[btnStyles.text, {
+                  color: props.color ? props.color : "#ffffff"
+                }]}>
           {props.children}
-        </Text>
-      </View>
+        </Text></Pressable></Pressable>
+      </View></Pressable></Pressable></Pressable>
     </TouchableHighlight>;
 };
 

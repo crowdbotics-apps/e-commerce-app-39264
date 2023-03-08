@@ -9,7 +9,8 @@ export const screens = mods.map(mod => {
 });
 export function getNavigationScreen(name) {
   const screen = screens.find(screen => screen.name == name);
-  console.log(screen.name)
+  console.log(screen.name);
+
   if (screen) {
     return screen.name;
   }
