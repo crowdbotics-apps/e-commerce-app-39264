@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
     width: 248,
     height: 30,
     top: 104,
-    left: 42
+    left: 41
   },
   UPeIzkDb: {
     width: 46,
