@@ -158,8 +158,8 @@ const styles = StyleSheet.create({
     width: 16,
     height: 17,
     position: "absolute",
-    left: 303,
-    top: 44
+    left: 310,
+    top: 42
   },
   YrbcXxYS: {
     width: 235,
